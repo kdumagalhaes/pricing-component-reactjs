@@ -2,7 +2,7 @@ import React from 'react';
 import { CardRowDiv } from './CardRowStyles';
 import Card from '../Cards/Card';
 
-const CardRow = ({setPrice, currentPrice}) => {
+const CardRow = ({ setPrice, currentPrice }) => {
   const monthly = [19.99, 24.99, 39.99];
   const annually = [199.99, 249.99, 399.99];
   const priceChanged = currentPrice ? annually : monthly;
