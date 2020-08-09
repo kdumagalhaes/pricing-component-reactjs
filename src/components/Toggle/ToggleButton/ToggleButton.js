@@ -1,15 +1,19 @@
-import React, {useState} from 'react'
-import {ToggleButtonDiv, ToggleCircleDiv} from './ToggleButtonStyles'
+import React, { useState } from 'react';
+import { ToggleButtonDiv, ToggleCircleDiv } from './ToggleButtonStyles';
 
+const ToggleButton = ({setPrice, currentPrice}) => {
+  const [checked, setChecked] = useState(false);
+  const active = checked ? '0' : '24px';
+  return (
+    <ToggleButtonDiv
+      onClick={() => {
+        setChecked(!checked);
+        setPrice(!currentPrice);
+      }}
+    >
+      <ToggleCircleDiv rightMovement={active} />
+    </ToggleButtonDiv>
+  );
+};
 
-const ToggleButton = () => {
-    const [checked, setChecked] = useState(false)
-    const active = checked ? '24px' : '0'
-    return (
-        <ToggleButtonDiv onClick={() => setChecked(!checked)}>
-            <ToggleCircleDiv  rightMovement={active}/>
-        </ToggleButtonDiv>
-    )
-}
-
-export default ToggleButton
+export default ToggleButton;

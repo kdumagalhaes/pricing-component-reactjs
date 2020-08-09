@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const ButtonTag = styled.button`
   width: 100%;
   border: 1px solid ${({borderColor}) => borderColor};
-  background: transparent;
+  background: ${({buttonBackground}) => buttonBackground};
   border-radius: 5px;
   height: 35px;
   text-transform: uppercase;
@@ -16,7 +16,8 @@ export const ButtonTag = styled.button`
   color: ${({buttonFontColor}) => buttonFontColor};
 
   &:hover {
-  border: 1px solid hsl(236, 72%, 79%);
-  color: hsl(236, 72%, 79%);
+  border: 1px solid ${({buttonBorderHover}) => buttonBorderHover};
+  color: ${({buttonFontColorHover}) => buttonFontColorHover};
+  background: transparent;
   }
 `;

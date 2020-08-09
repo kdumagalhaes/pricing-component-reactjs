@@ -1,6 +1,14 @@
 import React from 'react';
-import { CardDiv, MoneySymbol, PriceTag, List, Title, ListItem, ListItemSpan } from './CardStyles';
-import Button from './Buttons/Button'
+import {
+  CardDiv,
+  MoneySymbol,
+  PriceTag,
+  List,
+  Title,
+  ListItem,
+  ListItemSpan,
+} from './CardStyles';
+import Button from './Buttons/Button';
 
 const Card = ({
   cardHeight,
@@ -16,6 +24,9 @@ const Card = ({
   titleColor,
   borderColor,
   buttonFontColor,
+  buttonBackground,
+  buttonFontColorHover,
+  buttonBorderHover,
 }) => {
   return (
     <CardDiv
@@ -24,14 +35,29 @@ const Card = ({
       backgroundColor={backgroundColor}
     >
       <div>
-      <Title titleColor={titleColor}>{title}</Title>
-      <PriceTag priceColor={priceColor}><MoneySymbol>$</MoneySymbol>{price}</PriceTag>
-      <List ulColor={ulColor}>
-        <ListItem><ListItemSpan>{item1}</ListItemSpan></ListItem>
-        <ListItem><ListItemSpan>{item2}</ListItemSpan></ListItem>
-        <ListItem><ListItemSpan>{item3}</ListItemSpan></ListItem>
-      </List>
-      <Button borderColor={borderColor} buttonFontColor={buttonFontColor}/>
+        <Title titleColor={titleColor}>{title}</Title>
+        <PriceTag priceColor={priceColor}>
+          <MoneySymbol>$</MoneySymbol>
+          {price}
+        </PriceTag>
+        <List ulColor={ulColor}>
+          <ListItem>
+            <ListItemSpan>{item1}</ListItemSpan>
+          </ListItem>
+          <ListItem>
+            <ListItemSpan>{item2}</ListItemSpan>
+          </ListItem>
+          <ListItem>
+            <ListItemSpan>{item3}</ListItemSpan>
+          </ListItem>
+        </List>
+        <Button
+          borderColor={borderColor}
+          buttonFontColor={buttonFontColor}
+          buttonBackground={buttonBackground}
+          buttonBorderHover={buttonBorderHover}
+          buttonFontColorHover={buttonFontColorHover}
+        />
       </div>
     </CardDiv>
   );
