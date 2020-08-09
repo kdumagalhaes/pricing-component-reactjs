@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
-import TopBG from './assets/bg-top.svg'
-import BottomBG from './assets/bg-bottom.svg'
+import TopBG from './assets/bg-top.svg';
+import BottomBG from './assets/bg-bottom.svg';
 
 const GlobalReset = createGlobalStyle`
     * {
@@ -17,10 +17,10 @@ const GlobalReset = createGlobalStyle`
         --light-grayish-blue: hsl(234, 14%, 74%);
         --grayish-blue: hsl(233, 13%, 49%);
         --dark-grayish-blue: hsl(232, 13%, 33%);
-        --bg-gradient: linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+        --bg-gradient: linear-gradient(115deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
 
         /* space */
-        --safe-area-padding: 0 25px 0 25px;
+        --safe-area-padding: 0 20px 0 20px;
     }
 
     body {
@@ -29,7 +29,7 @@ const GlobalReset = createGlobalStyle`
         font-size: 15px;
         font-family: 'Montserrat', sans-serif;
         background: url(${TopBG}) top right no-repeat, url(${BottomBG}) left 470px no-repeat, var(--very-light-grayish-blue);
-    }
+        }
 
     button {
         cursor: pointer;

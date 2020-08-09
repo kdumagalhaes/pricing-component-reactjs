@@ -4,7 +4,9 @@ import ToggleButton from './ToggleButton/ToggleButton';
 const Toggle = () => {
   return (
     <ToggleDiv>
+      <span>Anually</span>
       <ToggleButton />
+      <span>Monthly</span>
     </ToggleDiv>
   );
 };
