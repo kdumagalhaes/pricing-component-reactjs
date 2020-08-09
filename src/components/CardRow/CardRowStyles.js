@@ -8,4 +8,8 @@ max-width: 940px;
 height: auto;
 padding: var(--safe-area-padding);
 margin: 0 auto;
+
+@media (max-width: 860px) {
+    flex-direction: column;
+}
 `

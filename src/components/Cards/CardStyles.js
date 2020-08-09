@@ -16,4 +16,8 @@ export const CardDiv = styled.div`
       box-shadow: ${({ shadow }) => shadow};
     }
   }
+
+  @media (max-width: 860px) {
+    margin-bottom: 30px;
+}
 `;

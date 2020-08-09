@@ -29,6 +29,12 @@ const GlobalReset = createGlobalStyle`
         font-size: 15px;
         font-family: 'Montserrat', sans-serif;
         background: url(${TopBG}) top right no-repeat, url(${BottomBG}) left 470px no-repeat, var(--very-light-grayish-blue);
+
+        @media (max-width: 860px) {
+            background: url(${TopBG}) top no-repeat;
+            background-position-x: 200px;
+            background-position-y: -50px;
+        }
         }
 
     button {
