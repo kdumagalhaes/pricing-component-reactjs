@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const ButtonTag = styled.button`
   width: 100%;
-  border: 1px solid var(--light-grayish-blue);
+  border: 1px solid ${({borderColor}) => borderColor};
   background: transparent;
   border-radius: 5px;
   height: 35px;
@@ -13,7 +13,7 @@ export const ButtonTag = styled.button`
   font-size: 0.7rem;
   margin-top: 30px;
   transition: all 0.5s;
-  color: var(--grayish-blue);
+  color: ${({buttonFontColor}) => buttonFontColor};
 
   &:hover {
   border: 1px solid hsl(236, 72%, 79%);

@@ -14,6 +14,8 @@ const Card = ({
   priceColor,
   ulColor,
   titleColor,
+  borderColor,
+  buttonFontColor,
 }) => {
   return (
     <CardDiv
@@ -29,7 +31,7 @@ const Card = ({
         <ListItem><ListItemSpan>{item2}</ListItemSpan></ListItem>
         <ListItem><ListItemSpan>{item3}</ListItemSpan></ListItem>
       </List>
-      <Button/>
+      <Button borderColor={borderColor} buttonFontColor={buttonFontColor}/>
       </div>
     </CardDiv>
   );

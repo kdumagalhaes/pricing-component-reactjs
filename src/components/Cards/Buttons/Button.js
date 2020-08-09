@@ -1,9 +1,9 @@
 import React from 'react'
 import {ButtonTag} from './ButtonStyles'
 
-const Button = () => {
+const Button = ({borderColor, buttonFontColor}) => {
     return(
-        <ButtonTag>
+        <ButtonTag borderColor={borderColor} buttonFontColor={buttonFontColor}>
             Learn more
         </ButtonTag>
     )
