@@ -1,15 +1,49 @@
-import React from 'react'
-import { CardRowDiv } from './CardRowStyles'
-import Card from '../Cards/Card'
+import React from 'react';
+import { CardRowDiv } from './CardRowStyles';
+import Card from '../Cards/Card';
 
 const CardRow = () => {
-    return (
-        <CardRowDiv>
-            <Card cardHeight="400px" shadow="0px 0px 74px -39px rgba(73,76,95,0.7)" backgroundColor="#fff"/>
-            <Card cardHeight="450px" shadow="none" backgroundColor="var(--bg-gradient)"/>
-            <Card cardHeight="400px" shadow="0px 0px 74px -39px rgba(73,76,95,0.7)" backgroundColor="#fff"/>
-        </CardRowDiv>
-    )
-}
+  return (
+    <CardRowDiv>
+      <Card
+        cardHeight="400px"
+        shadow="0px 0px 74px -39px rgba(73,76,95,0.7)"
+        backgroundColor="#fff"
+        title="Basic"
+        price="19.99"
+        item1="500 GB Storage"
+        item2="2 User Allowed"
+        item3="Send up to 3 GB"
+        ulColor="var(--light-grayish-blue)"
+        priceColor="var(--dark-grayish-blue)"
+      />
+      <Card
+        cardHeight="450px"
+        shadow="none"
+        backgroundColor="var(--bg-gradient)"
+        title="Professional"
+        price="24.99"
+        item1="1 TG Storage"
+        item2="5 User Allowed"
+        item3="Send up to 10 GB"
+        ulColor="#fff"
+        titleColor="#fff"
+        priceColor="#fff"
+      />
+      <Card
+        cardHeight="400px"
+        shadow="0px 0px 74px -39px rgba(73,76,95,0.7)"
+        backgroundColor="#fff"
+        title="Master"
+        price="39.99"
+        item1="2 TG Storage"
+        item2="10 User Allowed"
+        item3="Send up to 20 GB"
+        ulColor="var(--light-grayish-blue)"
+        priceColor="var(--dark-grayish-blue)"
+      />
+    </CardRowDiv>
+  );
+};
 
-export default CardRow
+export default CardRow;
